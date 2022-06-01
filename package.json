@@ -1,0 +1,27 @@
+{
+  "name": "@compiled/parcel-app",
+  "version": "1.1.4",
+  "private": true,
+  "scripts": {
+    "build": "parcel build ./src/index.html",
+    "start": "parcel serve ./src/index.html --open --no-cache"
+  },
+  "dependencies": {
+    "@compiled/react": "*",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@compiled/parcel-config": "*",
+    "@compiled/parcel-transformer": "*",
+    "@parcel/config-default": "^2.3.1",
+    "@parcel/optimizer-htmlnano": "^2.3.2",
+    "@parcel/packager-html": "^2.3.2",
+    "@parcel/transformer-html": "^2.3.2",
+    "@parcel/transformer-posthtml": "^2.3.2",
+    "parcel": "^2.3.2"
+  },
+  "alias": {
+    "parcel-alias": "./lib/parcel-alias.ts"
+  }
+}

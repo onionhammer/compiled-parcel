@@ -1,0 +1,16 @@
+{
+  "extends": ["@parcel/config-default", "@compiled/parcel-config"],
+  "transformers": {
+    "*.customjsx": [
+      "@compiled/parcel-transformer",
+      "@parcel/transformer-babel",
+      "@parcel/transformer-js",
+      "@parcel/transformer-react-refresh-wrap",
+      "..."
+    ]
+  },
+  "resolvers": [
+    "@compiled/parcel-resolver-alias",
+    "..."
+  ]
+}
